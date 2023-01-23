@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="prog.js"></script>
+ </head>
+ 
+ <body>
+ <label>Select to calculate the Numbers:</label> <br><br>
+  <select id="calculation" name="calculation">
+   <option selected disabled>choose to calculate</option>
+   <option name="add">Addition</option>
+   <option name="sub">subtraction</option>
+   <option name="mul">multiplication</option>
+   <option name="div">divition</option>
+  </select>
+  <br><br>
+  <hr>
+  <label for="Number1">Enter the first number:</label> <br><br>
+  <input type="text" id="num1" name="num1" >
+  
+  <br><br>
+  
+  <label for="Number2">Enter the second number:</label> <br><br>
+  <input type="text" id="num2" name="num2">
+  <br><br><hr>
+  
+  <button type="button" onclick="display(document.getElementById('calculation').value, document.getElementById('num1').value, document.getElementById('num2').value)">Equal</button>
+  
+ </body>
+</html>
